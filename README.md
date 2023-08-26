@@ -1,29 +1,18 @@
-# README #
+# data-platform-production-order-confirmation-sql
 
-This README would normally document whatever steps are necessary to get your application up and running.
+data-platform-production-order-confirmation-sql は、データ連携基盤において、製造指図確認データを維持管理するSQLテーブルを作成するためのレポジトリです。 
 
-### What is this repository for? ###
+## 前提条件  
+data-platform-production-order-confirmation-sql は、データ連携にあたり、API を利用し、本レポジトリ の sql 設定ファイルの内容は、下記 URL の API 仕様を前提としています。  
+https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview  
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## sqlの設定ファイル
 
-### How do I get set up? ###
+data-platform-production-order-confirmation-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* data-platform-production-order-confirmation-sql-header-data.sql（データ連携基盤 製造指図確認 - ヘッダデータ）
+* data-platform-production-order-confirmation-sql-header-doc-data.sql（データ連携基盤 製造指図確認 - ヘッダ文書データ）
 
-### Contribution guidelines ###
+## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
