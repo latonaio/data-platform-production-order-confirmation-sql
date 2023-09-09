@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_production_order_confirmation_header_doc_data`
     `OperationsItem`                 int(6) NOT NULL,
     `OperationID`                    int(4) NOT NULL,
     `ConfirmationCountingID`         int(4) NOT NULL,
-    `DocType`                        varchar(20) NOT NULL,
+    `DocType`                        varchar(100) NOT NULL,
     `DocVersionID`                   int(4) NOT NULL,
     `DocID`                          varchar(100) NOT NULL,
     `FileExtension`                  varchar(20) NOT NULL,
